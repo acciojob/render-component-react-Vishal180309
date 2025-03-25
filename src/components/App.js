@@ -1,11 +1,17 @@
-import React, {Component, useState} from "react";
-import '../styles/App.css';
+import React from 'react';
+import ReactDOM from 'react-dom';
 
-const App = () => {
-  return (
-    <div id="main"></div>
-  )
+function MyComponent() {
+    return (
+        <p>
+            I am learning React. My life is getting better.
+        </p>
+    );
 }
 
-
-export default App;
+ReactDOM.render(
+    <React.StrictMode>
+        <MyComponent />
+    </React.StrictMode>,
+    document.getElementById('root')
+);
